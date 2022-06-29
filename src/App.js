@@ -3,12 +3,12 @@ import Sidebar from "./Components/Sidebar/Sidebar/Sidebar";
 
 function App() {
   return (
-    <div>
-     <div className="grid md:grid-flow-row lg:grid-flow-col">
+    <>
+     <div className="grid grid-cols-4">
       <Sidebar />
       <Dashboard />
      </div>
-    </div>
+    </>
   );
 }
 
