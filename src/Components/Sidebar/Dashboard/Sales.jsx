@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Graph from "./GraphTop";
+import GraphTop from "./GraphTop";
+import Graph from "./Graph";
 
 const Sales = () => {
   return (
@@ -35,6 +36,7 @@ const Sales = () => {
       </div>
       <hr />
 
+      <GraphTop />
       <Graph />
     </div>
   );

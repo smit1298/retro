@@ -1,7 +1,8 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import Sales from "./Sales";
-import Graph from "./GraphTop";
+import Expense from "./Expense";
+import Products from "./Products";
 
 const Dashboard = () => {
   return (
@@ -33,6 +34,8 @@ const Dashboard = () => {
         </div>
       </div>
       <Sales />
+      {/* <Expense />
+      <Products /> */}
     </div>
   );
 };
