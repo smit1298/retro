@@ -1,55 +1,51 @@
 import { useState } from "react";
-import { Line } from "react-chartjs-2";
+import { Radar } from "react-chartjs-2";
 import {
   Chart as ChartJS,
   Title,
   Tooltip,
-  LineElement,
+  RadialLinearScale,
   Legend,
   CategoryScale,
   LinearScale,
   PointElement,
-  Filler
+  Filler,
+  RadarController
 } from "chart.js";
 ChartJS.register(
   Title,
   Tooltip,
-  LineElement,
   Legend,
   CategoryScale,
   LinearScale,
   PointElement,
-  Filler
+  Filler,
+  RadarController,RadialLinearScale
 );
 
-const Graph = () => {
+const Categories = () => {
   const [data, setData] = useState({
     labels: [
-      "Jan",
-      "Feb",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
+      "Shoes",
+      "Jean",
+      "Accessories",
+      "Watch",
+      "T-Shirt",
+      "Outwear"
     ],
     datasets: [
       {
         Label: "First Dataset",
-        data: [30, 31, 17, 29, 32, 15, 17, 20, 21, 20, 32, 5],
-        tension: 0.4,
+        data: [45, 44, 41, 45, 45, 45],
+        tension: 0.01,
         backgroundColor: "rgb(87, 105, 242, 0.1)",
         borderColor: "rgb(87, 105, 242)",
         fill: true
       },
       {
-        Label: "First Dataset",
-        data: [21, 15, 23, 32, 22, 20, 22, 20, 16, 21, 23, 20, 27],
-        tension: 0.4,
+        Label: "second Dataset",
+        data: [40, 42, 48, 40, 39, 4],
+        tension: 0.01,
         backgroundColor: "rgb(245, 39, 142, 0.1)",
         borderColor: "rgb(245, 39, 142)",
         fill: true
@@ -58,9 +54,9 @@ const Graph = () => {
   });
   return (
     <div className="bg-white" style={{height: "180px"}}>
-      <Line data={data} style={{height: "100%"}}/>
+      <Radar data={data} style={{height: "100%"}}/>
     </div>
   );
 };
 
-export default Graph;
+export default Categories;
