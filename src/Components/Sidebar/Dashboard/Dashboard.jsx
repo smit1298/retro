@@ -6,7 +6,7 @@ import Products from "../Dashboard/Products/Products"
 
 const Dashboard = () => {
   return (
-    <div className="bg-gray-200 px-4 pb-4 rounded-2xl md:col-span-3">
+    <div className="bg-gray-200 px-4 pb-4 rounded-2xl col-span-3">
       <div className="flex mt-4 justify-between">
         <div className="relative">
           <input
