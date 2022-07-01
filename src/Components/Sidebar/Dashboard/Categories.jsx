@@ -44,7 +44,7 @@ const Categories = () => {
       },
       {
         Label: "second Dataset",
-        data: [40, 42, 48, 40, 39, 4],
+        data: [40, 42, 48, 40, 39, 20],
         tension: 0.01,
         backgroundColor: "rgb(245, 39, 142, 0.1)",
         borderColor: "rgb(245, 39, 142)",

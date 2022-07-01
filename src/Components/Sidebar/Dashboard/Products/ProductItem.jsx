@@ -9,15 +9,15 @@ const ProductItem = ({card}) => {
 
       <div className="block w-[200px] ml-3">
         <h3>{card.title}</h3>
-        <p>{card.variants}</p>
+        <p className="text-dab">{card.variants}</p>
       </div>
 
-      <div className="w-[120px] flex ml-2">
-        <p>{card.sku} &nbsp;</p>
+      <div className="w-[100px] flex ml-2">
+        <p className="text-dab">{card.sku} &nbsp;</p>
         <h3>{card.skuN}</h3>
       </div>
 
-      <div className="mx-4 w-[60px]">
+      <div className="mx-4 w-[50px]">
         <p>{card.type}</p>
       </div>
 
