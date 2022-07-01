@@ -2,17 +2,17 @@ import React from "react";
 
 const ProductItem = ({card}) => {
   return (
-    <div className="flex mx-6 bg-red-200">
+    <div className="flex mx-6">
       <div className="ml-3" >
         <img className="w-8 h-8 rounded" src={card.img} alt={card.title} />
       </div>
 
-      <div className="block w-[200px] bg-blue-300 ml-3">
+      <div className="block w-[200px] ml-3">
         <h3>{card.title}</h3>
         <p>{card.variants}</p>
       </div>
 
-      <div className="bg-red-400 w-[120px] flex ml-2">
+      <div className="w-[120px] flex ml-2">
         <p>{card.sku} &nbsp;</p>
         <h3>{card.skuN}</h3>
       </div>

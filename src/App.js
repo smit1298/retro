@@ -4,9 +4,9 @@ import Sidebar from "./Components/Sidebar/Sidebar/Sidebar";
 function App() {
   return (
     <>
-     <div className="md:flex lg:grid lg:grid-cols-4">
+     <div className="flex justify-between">
       <Sidebar />
-      {/* <Dashboard /> */}
+      <Dashboard />
      </div>
     </>
   );

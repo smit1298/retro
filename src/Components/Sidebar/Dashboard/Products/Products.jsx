@@ -4,13 +4,13 @@ import ProductList from "./ProductList";
 
 const Products = () => {
   return (
-    <div className="flex">
-      <div className="bg-red-900 w-1/3">
-        <p>Top Selling Categories </p>
+    <div className="flex  justify between">
+      <div className="bg-white mt-3 mr-3 rounded w-1/3">
+        <p className="m-3">Top Selling Categories </p>
         <Categories />
       </div>
-      <div className="bg-blue-300 w-2/3">
-        <p>Latest Added Products</p>
+      <div className="bg-white mt-3 mr-3 rounded w-2/3">
+        <p className="m-3">Latest Added Products</p>
         <ProductList />
       </div>
     </div>

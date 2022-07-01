@@ -5,14 +5,14 @@ const Sidebar = () => {
   const [hamburger, setHamburger] = useState(false);
 
   return (
-    <div className="md:flex md:flex-row-reverse  block bg-white-500 pl-16">
+    <div className="md:flex md:flex-row-reverse md:pl-0 block bg-white-500 pl-16">
       <div className="mb-20">
         <h1 className="uppercase text-blue-900 font-extrabold text-5xl h-5 mt-3 mb-8">
           retro
         </h1>
       </div>
 
-      <div className="md:hidden lg:block">
+      <div className="md:hidden block">
         <a href="/" className="text-[#7434eb]">
           <Detail dash="bg-gray-200" logo="typcn:chart-line" text="Dashboard" />
         </a>
