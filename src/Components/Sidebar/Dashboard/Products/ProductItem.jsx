@@ -26,7 +26,7 @@ const ProductItem = ({card}) => {
       </div>
 
       <div className="mx-4">
-        <p>{card.status}</p>
+        <p className={card.className}>{card.status}</p>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ const product = {
       date: "12.11.2020",
       status: "Published",
       type: "Jerseys",
+      className: "published"
     },
     {
       id: "2",
@@ -21,6 +22,8 @@ const product = {
       date: "12.11.2020",
       status: "Pending",
       type: "Jerseys",
+      className: "pending"
+
     },
     {
       id: "3",
@@ -32,6 +35,8 @@ const product = {
       date: "10.11.2020",
       status: "Published",
       type: "Outwear",
+      className: "published"
+
     },
     {
       id: "4",
@@ -43,6 +48,7 @@ const product = {
       date: "07.11.2020",
       status: "Published",
       type: "Jersey",
+      className: "published"
     },
   ],
 };

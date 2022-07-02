@@ -2,4 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-canvas { height: 100% !important }
+canvas {
+  height: 100% !important;
+}
+
+.published {
+  background-color: rgb(157, 237, 202);
+  border-radius: 10px; 
+  color: rgb(72, 210, 72); 
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.pending {
+  background-color: rgb(247, 198, 108);
+  color: rgb(164, 126, 54);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
